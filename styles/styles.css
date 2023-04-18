@@ -83,8 +83,9 @@ p {
 .hero {
   background-image: url("../images/rain_bk.png");
   position: absolute;
+  min-height: 522px;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .title-second {
   font-family: "PT Serif";
@@ -156,4 +157,29 @@ p {
   letter-spacing: 0.05em;
   color: #ffffff;
   margin-bottom: 11px;
+}
+/* //////////////////////////////////////////////////////////// */
+
+.about {
+  background-image: url("../images/imageBGBlue.png");
+  height: 339px;
+  position: absolute;
+  top: 575px;
+}
+.about-container{
+margin: 43px 29px 33px 24px;
+}
+.about-text{
+    font-family: 'Yeseva One';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.28;
+        text-align: center;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        margin-top: 17px;
+       
+}
+.about-svg{
+        transform: translateX(240px);
 }
