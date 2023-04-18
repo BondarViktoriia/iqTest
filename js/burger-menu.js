@@ -29,3 +29,16 @@ closeBtn.addEventListener('click', function () {
   burgerMenu.classList.toggle("open");
 
 })
+
+// Получаем все ссылки с якорями на странице
+const links = document.querySelectorAll("a[href^='#']");
+
+// Добавляем обработчик события на каждую ссылку
+links.forEach((link) => {
+  link.addEventListener("click", (event) => {
+
+    // Закрываем бургер-меню при клике на ссылку
+    menu.style.display = "none";
+    burgerMenu.classList.remove("active");
+  });
+});

@@ -114,9 +114,10 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+    margin-top: 150px;
 }
 .btn-test {
-  margin-top: 150px;
+
   font-family: "Merriweather";
   font-weight: 700;
   font-size: 14px;
@@ -162,24 +163,59 @@ p {
 
 .about {
   background-image: url("../images/imageBGBlue.png");
+  width: 100vw;
   height: 339px;
   position: absolute;
   top: 575px;
 }
-.about-container{
-margin: 43px 29px 33px 24px;
+.about-container {
+  margin: 43px 29px 33px 24px;
 }
-.about-text{
-    font-family: 'Yeseva One';
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 1.28;
+.about-text {
+  font-family: "Yeseva One";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.28;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-top: 17px;
+}
+.about-svg {
+  transform: translateX(240px);
+}
+
+/* ///////////////////////////////////////////////////////////// */
+.inform {
+  position: absolute;
+  top: 917px;
+  background-color: #f3f3f2;
+    width: 100vw;
+}
+.inform-container {
+  margin:  38px 14px;
+}
+
+.inform-text {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: #272727;
+}
+.text-span{
+    text-transform: uppercase;
+   font-weight: bold;
+}
+.text-span-little{
+    font-weight: bold;
+}
+.inform-img{
+    margin-top: 38px;
+    text-align: center;
+}
+.inform-btn-container{
+    margin-bottom: 40px;
         text-align: center;
-        letter-spacing: 0.05em;
-        color: #FFFFFF;
-        margin-top: 17px;
-       
-}
-.about-svg{
-        transform: translateX(240px);
 }
