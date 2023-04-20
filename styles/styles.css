@@ -307,6 +307,7 @@ p {
 }
 .section-question{
   margin-bottom: 25px;
+    max-width: 320px;
 }
 /* .section-question{
   /* /* max-width: 320px;
@@ -317,11 +318,14 @@ p {
 .section-question-age{
   display: none;
     margin-bottom: 25px;
+      max-width: 320px;
 }
 .section-question-new{
   display: none;
     margin-bottom: 25px;
+      max-width: 320px;
 }
+
 .img {
   background-color: transparent;
   width: 48px;
@@ -376,6 +380,12 @@ margin: 17px 30px 0px 30px;
 .question-container-unnecessary{
   margin-top: 42px;
 }
+.question-container-number{
+  margin: 28px 20px 0 20px;
+}
+.question-container-city{
+  margin: 37px 41px 0 42px;
+}
 .select{
   background-color:rgba(242, 243,243, 0.15);
 
@@ -392,6 +402,11 @@ margin: 17px 30px 0px 30px;
       padding-left: 35px;
       
         color: #FFFFFF;
+}
+.select-number{
+      height: 40px;
+        line-height: 2.72;
+
 }
 .select[type="radio"]:checked{
   background-color: #ffc700;
@@ -442,4 +457,75 @@ background-color: #DADADA;
 .unnecessary-btn-container{
   text-align: center;
     margin-top: 35px;
+}
+
+/* ////////////////////////////////////////////////////// */
+
+.question-container-colors{
+  margin: 28px 20px 0px 20px;
+}
+
+.color-selection {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 26px 0 27px;
+}
+
+.color-selection label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  margin: 7px;
+  cursor: pointer;
+}
+
+.color-selection label:hover, label:focus {
+border: 6px solid #FFC700
+}
+
+.color-selection input[type="radio"] {
+  display: none;
+}
+
+.color {
+  width: 69px;
+  height: 69px;
+}
+
+.gray {
+  background-color: #A8A8A8;
+}
+
+.blue {
+  background-color: #0000A9;;
+}
+
+.green {
+  background-color: #00A701;;
+}
+
+.red {
+  background-color: #F60100;
+}
+
+.yellow {
+  background-color: #FDFF19;
+}
+
+.braun {
+  background-color: #A95403;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.violete {
+  background-color: #850068;
+}
+
+.turquoise {
+  background-color: #46B2AC;
 }
