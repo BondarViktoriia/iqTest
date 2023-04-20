@@ -1,12 +1,16 @@
-const checkbox = document.querySelector(".select-input");
-const nextBtn = document.querySelector(".btn-next");
+const checkboxes = document.querySelectorAll(".select-input");
+const nextBtns = document.querySelectorAll(".btn-next");
 
-checkbox.addEventListener('change', function () {
-    if (checkbox.checked) {
-        nextBtn.style.backgroundColor = "#FFC700"
-        nextBtn.style.color="black"
-    } else {
-        nextBtn.style.backgroundColor = '';
-         nextBtn.style.color=" "
-    }
-})
+checkboxes.forEach((checkbox) => {
+  checkbox.addEventListener("change", function () {
+    nextBtns.forEach((nextBtn) => {
+      if (!checkbox.checked) {
+        nextBtn.style.backgroundColor = "";
+        nextBtn.style.color = " ";
+      } else {
+        nextBtn.style.backgroundColor = "#FFC700";
+        nextBtn.style.color = "black";
+      }
+    });
+  });
+});

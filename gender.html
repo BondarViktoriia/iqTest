@@ -37,12 +37,13 @@
         </svg>
       </button>
     </nav>
-    <section class="section-question" data-page="1">
-      <div class="progress-container">
-        <div class="progress-bar">
-          <div class="progress"></div>
-        </div>
-      </div>
+    <div class="section">
+          <div class="progress-container">
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+    <section class="section-question" id="question1">
       <div class="question-container">
         <h1 class="question">Ваш пол:</h1>
       </div>
@@ -65,9 +66,45 @@
         <button class="btn-next">Далее</button>
       </div>
     </section>
-
+      <section class="section-question" id="question2">
+        <div class="question-container">
+          <h1 class="question">new</h1>
+        </div>
+        <div class="select-container">
+          <label class="select">
+            <input class="select-input" type="radio" name="gender" value="male" />
+            Мужчина
+          </label>
+          <label class="select">
+            <input class="select-input" type="radio" name="gender" value="female" />
+            Женщина
+          </label>
+        </div>
+        <div class="gender-btn-container">
+          <button class="btn-next">Далее</button>
+        </div>
+      </section>
+      <section class="section-question" id="question3">
+        <div class="question-container">
+          <h1 class="question">title</h1>
+        </div>
+        <div class="select-container">
+          <label class="select">
+            <input class="select-input" type="radio" name="gender" value="male" />
+            Мужчина
+          </label>
+          <label class="select">
+            <input class="select-input" type="radio" name="gender" value="female" />
+            Женщина
+          </label>
+        </div>
+        <div class="gender-btn-container">
+          <button class="btn-next">Далее</button>
+        </div>
+      </section>
+</div>
     <script src="./js/burger-menu.js"></script>
-    <script src="./js/checkbox.js"></script>
-    <script src="./js/nextPage.js"></script>
+    <script src="./js/checkbox.js" type="module"></script>
+    <script src="./js/nextPage.js" type="module"></script>
   </body>
 </html>

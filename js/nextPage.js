@@ -1,29 +1,24 @@
+const btnNext = document.querySelectorAll('.btn-next');
 const sections = document.querySelectorAll('.section-question');
-const progressBar = document.querySelector('.progress');
+const progress = document.querySelector('.progress');
 
-// Обновление состояния прогресс-бара
-function updateProgressBar(currentPage) {
-  const totalSections = sections.length;
-  const progressPercent = ((currentPage - 1) / totalSections) * 100;
-  progressBar.style.width = `${progressPercent}%`;
+let currentQuestion = 0;
+
+// функция для скрытия текущего вопроса и отображения следующего
+function showNextQuestion() {
+  sections[currentQuestion].style.display = 'none';
+  currentQuestion++;
+  sections[currentQuestion].style.display = 'block';
+  updateProgressBar();
 }
 
-// Переход к следующей секции теста
-function goToNextSection(currentSection) {
-  const nextPage = currentSection.dataset.page + 1;
-  const nextSection = document.querySelector(`[data-page="${nextPage}"]`);
-  if (nextSection) {
-    currentSection.classList.remove('active');
-    nextSection.classList.add('active');
-    updateProgressBar(nextPage);
-  }
+// функция для обновления прогресс-бара
+function updateProgressBar() {
+  const percent = (currentQuestion / sections.length) * 100;
+  progress.style.width = percent + '%';
 }
 
-// Обработчик события на кнопку "Далее"
-const nextBtns = document.querySelectorAll('.btn-next');
-nextBtns.forEach((btn) => {
-  btn.addEventListener('click', (event) => {
-    const currentSection = event.target.closest('.section-question');
-    goToNextSection(currentSection);
-  });
+// добавляем обработчик событий на кнопку "Далее"
+btnNext.forEach((btn) => {
+  btn.addEventListener('click', showNextQuestion);
 });
