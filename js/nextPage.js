@@ -1,7 +1,6 @@
 const btnNext = document.querySelectorAll('.btn-next');
 const sections = document.querySelectorAll('.section-question');
 const progress = document.querySelector('.progress');
-
 let currentQuestion = 0;
 
 // функция для скрытия текущего вопроса и отображения следующего
