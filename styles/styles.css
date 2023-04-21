@@ -599,3 +599,39 @@ label:focus {
 .select-container-important{
   margin-top: 39px;
 }
+
+/* //////////////////////////////////////////////////// */
+
+.question-container-triangle{
+    margin: 17px 15px 0 16px;
+      text-align: center;
+}
+.triangle-img-container{
+  margin-top: 6px;
+  text-align: center;
+}
+.triagle-btn-container{
+  margin-top: 30px;
+    text-align: center;
+}
+.select-container-triangle{
+  margin-top: 19px;
+}
+.select-triangle{
+    font-size: 16px;
+    line-height: 1.06;
+}
+.triangle-span{
+      width: 223px;
+        display: inline-block;
+        margin-top: 7px;
+}
+
+.select-input-triangle[type="radio"]{
+      width: 20px;
+        height: 20px;
+        margin-right: 15px;
+        border-color: #ffffff;
+        background-color: transparent;
+}
+
