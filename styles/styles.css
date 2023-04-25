@@ -897,6 +897,19 @@ align-items: center;}
 }
 .red-phone{
   margin-left: 12px;
+  cursor: pointer;
+}
+.personalInfo{
+    font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 9px;
+      line-height: 1.2;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+      margin-top: 10px;
+      display: flex;
+      margin: 5px;
 }
 
 /* //////////////////////////////////////////////////////////////////// */
