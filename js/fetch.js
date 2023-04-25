@@ -27,8 +27,8 @@ phone.addEventListener("click", () => {
     </div>
 
     <div>
-         <p>Пол: ${personData.gender} </p>
-          <p>Дата рождения: ${personData.birth_year}</p>
+      <p>Пол: ${personData.gender} </p>
+      <p>Дата рождения: ${personData.birth_year}</p>
       <p>Родная планета: ${planetData.name}</p>
       <p>Корабль: ${starshipData.name}</p>
       <p>Транспортное средство: ${vehiclesData.name}</p>
@@ -40,11 +40,3 @@ phone.addEventListener("click", () => {
     personalInfo.innerHTML = html;
   });
 });
-
-// function fetchPersonInfo() {
-// ;
-// }
-
-// fetchPersonInfo().catch((error) => {
-//   console.log(error);
-// });
