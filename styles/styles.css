@@ -746,12 +746,13 @@ label:focus {
   max-width: 320px;
   background-image: url(../images/rain_bk2.png);
   position: absolute;
-  max-height: 568px;
+  /* max-height: 568px; */
+  height: 100vh;
 }
 .done {
   display: none;
   max-width: 320px;
-  max-height: 568px;
+  /* max-height: 568px; */
 }
 .test-done {
   display: none;
@@ -873,4 +874,52 @@ label:focus {
 .timer-container {
   display: flex;
   justify-content: center;
+}
+.red-container{
+  margin-top: 6px;
+  width: 267px;
+  height: 92px;
+  background-color: #EB1B00;
+  display: flex;
+align-items: center;}
+.red-text{
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-align: start;
+}
+.red-text-container{
+  margin-left: 18px;
+}
+.red-phone{
+  margin-left: 12px;
+}
+
+/* //////////////////////////////////////////////////////////////////// */
+
+.footer{
+margin: 0 13px 0 13px;
+height: 24px;
+padding-top: 142px;
+  position: fixed;
+    bottom: 0;
+    overflow-y: scroll;
+    max-width: 299px;
+}
+
+.footer-text{
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 1.29;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  
+    color: rgba(255, 255, 255, 0.5);
 }
